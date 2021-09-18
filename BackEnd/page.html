@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>File Upload Test</h1>
+
+    <form action="http://localhost:8080/atasamente" method="post" enctype="multipart/form-data">
+        <input type="file" name="avatar" multiple />
+        <button>Submit</button>
+    </form>
+
+    <div class="images">
+       
+    </div>
+    <div>
+        <img src="Documente/boss.png-1624970018736.png"></img>
+    </div>
+    
+    <!-- <script>
+         const loadImages = async () => {
+            const response = await fetch('http://localhost:3001/images').then(response => response.json());
+            const imagesElem = document.querySelector('.images');
+            imagesElem.innerHTML = '';
+            response.images.forEach(image => {
+                const img = document.createElement('img');
+                img.src = image.filePath;
+                img.height = '200';
+                imagesElem.appendChild(img);
+            });
+        };
+
+       window.onload = loadImages;
+    </script> -->
+</body>
+
+</html>
+
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="page.js"></script>
