@@ -1,0 +1,24 @@
+/* .rootCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.38);
+} */
+
+.portBodyCl {
+    /* display: flex;
+    flex: 1 0 auto;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column; */
+    overflow: "hidden";
+    text-overflow: "ellipsis";
+    width: 11rem;
+   
+}
+
+.portButCl{
+    display: flex;
+    justify-content: flex-start;
+}
